@@ -1,0 +1,12 @@
+body { background-color: /*#cde47b*/#a4c921; font-family: 'open sans', sans-serif; font-size: 10pt; background-image: url('images/Arolla_S1.jpg'); /*background-size: cover !important; */background-attachment: fixed;
+      background-clip: border-box; background-repeat: no-repeat; background-origin: padding-box; background-position: 50% 0; background-size: 100% auto; }
+header { background-image: url('images/logo_arolla.png'); background-repeat: no-repeat no-repeat; height: 100px; width: 800px; margin: auto; }
+
+#whoRWe { width: 800px; margin: auto; }
+#whoRWe div.cnt {  background-image: url('images/articleBg.png'); background-repeat: repeat; padding: 1ex; border-radius: 15px; }
+section p { text-align: justify; }
+section p.pictured { text-align: center; }
+section p span.hglgt { font-weight: bold; color: #050;}
+span.legend { font-style: italic; font-size: 8pt; text-decoration: underline; }
+#arollaDsk { width: 300px; background-color: #fff; border: solid 1px #8c8; padding: 1ex; display: block; margin: auto; }
+#mspartner { border: solid 1px #8c8; }
