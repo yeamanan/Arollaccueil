@@ -3,44 +3,87 @@
 @font-face { font-family: "Ma Super Fonte"; src: url('MaSuperFonte-Italic.ttf'); font-style: italic; }
 @font-face { font-family: "Ma Super Fonte"; src: url('MaSuperFonte-Bold.ttf'); font-weight: bold; }
 /**/
-body { background-color: /*#cde47b*/#a4c921; font-family: "CantarellRegular", "open sans", "Trebuchet MS", Tahoma, Arial, sans-serif; font-size: 10pt; background-image: url('images/Arolla_S1.jpg'); /*background-size: cover !important; */background-attachment: fixed;
-      background-clip: border-box; background-repeat: no-repeat; background-origin: padding-box; background-position: 50% 150px; background-size: 100% auto; }
-      
-h1 {  }
-h2 { color: #444; font-style: italic; border-bottom: solid 1px #aaa; padding-bottom: 1ex; }
-h3 {  }
-h4 {  }
-h5 {  }
-h6 {  }
+body { margin: 0; padding: 0; background-color: /*#cde47b*/#a4c921; font-family: "CantarellRegular", "open sans", "Trebuchet MS", Tahoma, Arial, sans-serif; font-size: 10pt; background-image: url('images/Arolla_S1.jpg'); /*background-size: cover !important; */background-attachment: fixed;
+      background-clip: border-box; background-repeat: no-repeat; background-origin: padding-box; /** /background-position: 50% 150px; background-size: auto 100%; /*/ background-position: 50% 50%; background-size: auto 100%; /**/ }
+h1, h2, h3, h4, h5, h6 { margin: 0 1ex; padding: 1ex; color: #444; border-bottom: solid 1px #aaa; font-size: 16pt; }
+h3, h4 { font-size: 14pt; color: #555; border-color: #bbb; }
+h5, h6 { font-size: 12pt; color: #666; border-color: #ccc; }
+h1 { }
+h2 { margin-left: 1em; font-style: italic; }
+h3 { margin-left: 2em; }
+h4 { margin-left: 3em; font-style: italic; }
+h5 { margin-left: 4em; }
+h6 { margin-left: 5em; font-style: italic; }
+h3.subTtl { font-size: 14pt; color: #060; font-weight: bold; }
+
+a { color: #040; font-weight: bold; }
+
 header { background-image: url('images/logo_arolla.png'); background-repeat: no-repeat no-repeat; height: 100px; width: 800px; margin: auto; }
+footer { background-color: #222; color: #fff; margin-top: 1em; padding: 1em 0; position: fixed; width: 100%; bottom: 0; }
+footer p { width: 800px; margin: auto; padding-left: 1ex; }
+
 #lnkbanner { color: transparent; display: block; height: 90px; width: 250px; }
 nav { width: 800px; margin: auto; margin-top: 1em; }
 nav a.art { font-size: 12pt; color: #fff; background-color: #020; text-decoration: none; padding: 1ex 1em; display: block-inline; border-radius: 5px; }
 nav a.art:hover, nav a.art:focus { text-decoration: underline; }
 section { background-image: url('images/articleBg.png'); background-repeat: repeat; border-radius: 15px; }
-#arts { width: 800px; margin: auto; margin-top: 1em; padding-top: 1ex; padding-bottom: 1ex; }
-#arts article { margin: 0 1ex 1ex; }
+section section{ background: none; margin: 0; padding: 0; }
+#arts { width: 800px; margin: auto; margin-top: 1em; padding-top: 1ex; padding-bottom: 1ex; margin-bottom: 4em; }
+#arts article { margin: 0 1ex 1ex; background-image: url('images/articleBg.png'); background-repeat: repeat; border-radius: 10px; }
 #arts article:last-child { margin-bottom: 0; }
-#arts div.cnt { background-image: url('images/articleBg.png'); background-repeat: repeat; padding: 1ex; border-radius: 10px; }
-#arts article:last-child div.cnt { margin-bottom: 0;}
+#arts article article{ background: none; margin: 0; padding: 0; }
+#arts div.artcnt { padding: 1em; }
+#arts div.artcnt div.artcnt{ padding: 0; }
+#arts article:last-child div.artcnt { margin-bottom: 0;}
+#arts div.artcnt img { background-color: #fff; border: solid 1px #8c8; padding: 1ex; display: block; margin: auto; }
+#arts div.cnt { padding: 0 1ex; }
 section p { text-align: justify; }
 section p.pictured { text-align: center; }
-section p span.hglgt { font-weight: bold; color: #050;}
+section p span.hglgt, a.artlnk { font-weight: bold; color: #050; }
 span.legend { font-style: italic; font-size: 8pt; text-decoration: underline; }
 
+a.artlnk { text-decoration: underline; }
+
 /* -- Images -- */
-#arollaDsk { width: 300px; background-color: #fff; border: solid 1px #8c8; padding: 1ex; display: block; margin: auto; }
-#mspartner { border: solid 1px #8c8; }
+#arollaDsk { width: 300px; /** /background-color: #fff; border: solid 1px #8c8; padding: 1ex; display: block; margin: auto;/**/ }
+#mspartner { /** /border: solid 1px #8c8;/**/ }
+#prtqagiles { }
 /* -- Images -- */
+
+
+
+/* Les grands écrans : */
+@media (min-width: 1200px)
+{
+
+}
+/* Les petits écrans : */
+@media (min-width: 768px) and (max-width: 979px)
+{
+
+}
+/* Les tablettes : */
+@media (max-width: 767px)
+{
+
+}
+/* Les smartphones : */
+@media (max-width: 480px)
+{
+
+}
 
 @media screen and (max-width: 900px) {
   body { background-size: 900px auto; }
-  header { width: 100%;}
+  header { width: 100%; }
+  #lnkbanner { width: 100%; }
+  footer p { width: 100%; text-align: center; }
   /**/nav { width: 100%; }/**/
   #arts { width: 100%; }
-}
+/** /}
 
 @media screen and (max-width: 768px) {
+/**/
   body { background-size: 100% auto; }
   header { background-position: center top; }
   /** /nav { width: 100%; }/**/
